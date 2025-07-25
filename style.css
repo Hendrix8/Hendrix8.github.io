@@ -52,3 +52,16 @@ input[type="text"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+#talkList {
+  margin-top: 1rem;
+}
+
+.talk {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5); /* grey separator line */
+}
+
+.talk:last-child {
+  border-bottom: none;
+}
