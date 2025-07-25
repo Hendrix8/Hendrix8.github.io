@@ -1,70 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Christos Panourgias</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 2rem;
-      line-height: 1.6;
-      max-width: 800px;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Christos Panourgias</h1>
-  <p>
-    Ph.D. Candidate in Computer Science<br>
-    Laboratoire d’Informatique Paris Descartes (LIPADE)<br>
-    Université Paris Cité, Paris, France
-  </p>
+  <header>
+    <div class="logo"><img src="logo.png" alt="University Logo"></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="CV.pdf">CV</a>
+    </nav>
+  </header>
 
-  <h2>About Me</h2>
-  <p>
-    I'm currently pursuing a Ph.D. in Computer Science, focusing on time series analysis, metric learning, and data embeddings.
-    My academic background includes an MSc in Artificial Intelligence and a BSc in Applied Mathematics.
-  </p>
+  <div class="main">
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Profile picture" class="profile-pic"/>
+      <h2>Christos Panourgias</h2>
+      <p>Ph.D. Candidate<br>Université Paris Cité</p>
+      <p>📍 Paris, France</p>
+      <p>📧 <a href="mailto:panourgiaschris@gmail.com">Email</a></p>
+      <p><a href="https://linkedin.com/in/panc">LinkedIn</a></p>
+      <p><a href="https://github.com/Hendrix8">GitHub</a></p>
+    </aside>
 
-  <h2>Contact</h2>
-  <ul>
-    <li>Email: <a href="mailto:panourgiaschris@gmail.com">panourgiaschris@gmail.com</a></li>
-    <li>GitHub: <a href="https://github.com/Hendrix8">github.com/Hendrix8</a></li>
-    <li>LinkedIn: <a href="https://linkedin.com/in/panc">linkedin.com/in/panc</a></li>
-  </ul>
+    <section class="content">
+      <section id="home">
+        <h1>Welcome</h1>
+        <p>I am a Ph.D. student at Université Paris Cité, researching time series embeddings, deep metric learning, and data similarity search.</p>
+      </section>
 
-  <h2>Research & Projects</h2>
-  <ul>
-    <li>DTW-Preserving Embeddings for Enhanced Similarity Search</li>
-    <li>Company Bankruptcy Prediction</li>
-    <li>Fashion Recommendation Systems</li>
-    <li>More on my <a href="https://github.com/Hendrix8">GitHub</a></li>
-  </ul>
+      <section id="publications">
+        <h2>Publications</h2>
+        <input type="text" id="searchInput" onkeyup="searchPublications()" placeholder="Search publications...">
+        <ul id="pubList">
+          <li><strong>DTW-Preserving Time Series Embeddings</strong> – MSc Internship, 2024</li>
+          <li><strong>Regularization-free Diffeomorphic Nets</strong> – LIPADE, 2025</li>
+          <li><strong>Stock Price Prediction with RNNs</strong> – BSc Thesis, 2022</li>
+        </ul>
+      </section>
 
-  <h2>Teaching</h2>
-  <ul>
-    <li>Introductory Python Lecture for High School Students (in French)</li>
-    <li>Introductory LaTeX Lecture for High School Students (in French)</li>
-  </ul>
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul>
+          <li>Intro to Python – French high school students</li>
+          <li>Intro to LaTeX – French high school students</li>
+        </ul>
+      </section>
+    </section>
+  </div>
 
-  <h2>Presentations</h2>
-  <ul>
-    <li>Regularization-free Diffeomorphic Temporal Alignment Nets – 2025</li>
-    <li>Differential Transformer – 2024</li>
-    <li>DTW-Preserving Time Series Embeddings – 2024</li>
-  </ul>
-
-  <h2>CV</h2>
-  <p>
-    Download my CV <a href="CV.pdf" download>here</a>.
-  </p>
+  <script>
+    function searchPublications() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let items = document.getElementById("pubList").getElementsByTagName("li");
+      for (let i = 0; i < items.length; i++) {
+        let txt = items[i].textContent.toLowerCase();
+        items[i].style.display = txt.includes(input) ? "" : "none";
+      }
+    }
+  </script>
 </body>
 </html>
