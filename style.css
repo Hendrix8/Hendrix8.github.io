@@ -44,13 +44,11 @@ nav a:hover { color: var(--text); }
 /* Layout */
 .main {
   display: flex;
-  gap: 56px;
-  max-width: 1060px;
-  margin: 0 auto;
+  gap: 64px;
   padding: 48px 32px 80px;
 }
 .sidebar {
-  flex: 0 0 230px;
+  flex: 0 0 270px;
   align-self: flex-start;
   position: sticky;
   top: 90px;
@@ -59,9 +57,9 @@ nav a:hover { color: var(--text); }
 .sidebar h1 { font-size: 20px; font-weight: 600; margin: 16px 0 6px; }
 .sidebar p { margin: 0 0 8px; }
 .muted { color: var(--muted); font-size: 14px; }
-.links { display: flex; flex-direction: column; gap: 4px; margin-top: 14px; font-size: 14px; word-break: break-all; }
+.links { display: flex; flex-direction: column; gap: 4px; margin-top: 14px; font-size: 14px; overflow-wrap: anywhere; }
 
-.content { flex: 1; min-width: 0; }
+.content { flex: 1; min-width: 0; max-width: 1250px; }
 section { scroll-margin-top: 80px; margin-bottom: 44px; }
 #home p { margin-top: 0; }
 h2 {
