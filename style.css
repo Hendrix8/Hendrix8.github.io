@@ -79,8 +79,9 @@ input[type="text"] {
   color: #222;
   text-decoration: none;
 }
-.pub-title:hover {
-  text-decoration: underline;
+.pub-links {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .pub-badge {
   flex-shrink: 0;
