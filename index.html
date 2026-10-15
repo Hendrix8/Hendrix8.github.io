@@ -1,126 +1,140 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Christos Panourgias</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-	    <div class="logo"><img src="logo.png" alt="University Logo"></div>
-	    <nav>
-	      <a href="#home">Home</a>
-	      <a href="#experience">Experience</a>
-	      <a href="#publications">Publications</a>
-	      <a href="#talks">Presentations</a>
-	      <a href="#teaching">Teaching</a>
-	      <a href="CV.pdf">CV</a>
-	    </nav>
-	  </header>
+    <div class="logo"><img src="logo.png" alt="University Logo"></div>
+    <nav>
+      <a href="#publications">Publications</a>
+      <a href="#talks">Presentations</a>
+      <a href="#experience">Experience</a>
+      <a href="#teaching">Teaching</a>
+      <a href="CV.pdf" target="_blank">CV</a>
+    </nav>
+  </header>
 
   <div class="main">
-	    <aside class="sidebar">
-	      <img src="profile.jpg" alt="Profile picture" class="profile-pic"/>
-	      <h2>Christos Panourgias</h2>
-	      <p>Ph.D. Candidate<br>Université Paris Cité</p>
-	      <p>📍 Paris, France</p>
-	      <p>📧 <a href="mailto:panourgiaschris@gmail.com">panourgiaschris@gmail.com</a></p>
-	      <p>📧 <a href="mailto:christos.panourgias@etu-u.paris.fr">christos.panourgias@etu-u.paris.fr</a></p>
-	      <p><a href="https://linkedin.com/in/panc">LinkedIn</a></p>
-	      <p><a href="https://github.com/Hendrix8">GitHub</a></p>
-	    </aside>
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Profile picture" class="profile-pic"/>
+      <h1>Christos Panourgias</h1>
+      <p class="muted">Ph.D. Candidate<br>Université Paris Cité, LIPADE</p>
+      <p class="muted">Paris, France</p>
+      <div class="links">
+        <a href="mailto:panourgiaschris@gmail.com">panourgiaschris@gmail.com</a>
+        <a href="mailto:christos.panourgias@etu-u.paris.fr">christos.panourgias@etu-u.paris.fr</a>
+        <a href="https://linkedin.com/in/panc" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Hendrix8" target="_blank">GitHub</a>
+      </div>
+    </aside>
 
-    <section class="content">
-	      <section id="home">
-	        <p>Hello! I am a Ph.D. candidate at Université Paris Cité, affiliated with LIPADE, where I work on data-series representation learning under the supervision of <a href="https://helios2.mi.parisdescartes.fr/~themisp/" target="_blank">Prof. Themis Palpanas</a>.</p>
-	      </section>
+    <main class="content">
+      <section id="home">
+        <p>Hello! I am a Ph.D. candidate at Université Paris Cité, affiliated with LIPADE, where I work on data-series representation learning under the supervision of <a href="https://helios2.mi.parisdescartes.fr/~themisp/" target="_blank">Prof. Themis Palpanas</a>.</p>
+      </section>
 
-	      <section id="experience">
-	        <h2>Experience</h2>
-	        <div class="talk"><strong>Ph.D. Candidate</strong> – Laboratoire d’Informatique Paris Descartes (LIPADE), Université Paris Cité, Paris, France, Nov 2024 – Present</div>
-	        <div class="talk"><strong>Associate Researcher</strong> – Laboratoire d’Informatique Paris Descartes (LIPADE), Université Paris Cité, Paris, France, Sep 2024 – Nov 2024</div>
-	        <div class="talk"><strong>Associate Researcher</strong> – Laboratoire d’Informatique Paris Descartes (LIPADE), Université Paris Cité, Paris, France, Oct 2023 – Jun 2024</div>
-	      </section>
-
-	      <section id="publications">
-	        <h2>Publications</h2>
-	        <div id="pubList">
-	          <div class="pub">
-	            <div class="pub-row">
-	              <span class="pub-title">Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection</span>
-	              <span class="pub-links"><a class="pub-badge" href="https://arxiv.org/pdf/2610.20243" target="_blank">PDF</a> <a class="pub-badge" href="https://github.com/Hendrix8/RAMSAD" target="_blank">Supporting material</a></span>
-	            </div>
-	            <div class="pub-row pub-meta">
-	              <span><em class="pub-me">Christos Panourgias</em>*, Roberto Stanzione*, Adrien Petralia, Themis Palpanas, Paul Boniol</span>
-	              <span class="pub-venue">NeurIPS 2026</span>
-	            </div>
-	          </div>
-	          <p class="pub-note">* Equal contribution</p>
-	        </div>
-	      </section>
-
-	      <section id="talks">
-	      <h2>Presentations</h2>
-	      <div id="talkList">
-        <div class="talk">
-          <strong>Autonomous Agents for Research</strong> – LIPADE diNo-Group Presentation, Université Paris Cité, Sep 2026
+      <section id="publications">
+        <h2>Publications</h2>
+        <div class="entry">
+          <div class="row">
+            <span class="title">Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection</span>
+            <span class="badges"><a class="badge" href="https://arxiv.org/pdf/2610.20243" target="_blank">PDF</a> <a class="badge" href="https://github.com/Hendrix8/RAMSAD" target="_blank">Supporting material</a></span>
+          </div>
+          <div class="row meta">
+            <span><em class="me">Christos Panourgias</em>*, Roberto Stanzione*, Adrien Petralia, Themis Palpanas, Paul Boniol</span>
+            <span class="side">NeurIPS 2026</span>
+          </div>
         </div>
-        <div class="talk">
-          <strong>Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection</strong> – TwinODIS 2nd Summer School Presentation, ICS-FORTH, Jun 2026
-        </div>
-	        <div class="talk">
-	          <strong>ChatTS: Aligning Time Series with LLMs via Synthetic Data for Enhanced Understanding and Reasoning</strong> – LIPADE diNo-Group Presentation, Université Paris Cité, Feb 2026
-	        </div>
-	        <div class="talk">
-	          <strong>WETW: Efficient DTW Approximation over DTW-Preserving Embeddings</strong> – LIPADE diNo-Group Presentation, Université Paris Cité, Nov 2025
-	        </div>
-	        <div class="talk">
-	          <strong>Faster and More Accurate Time Series Similarity Evaluation</strong> – TwinODIS 1st Summer School Pitch Jam Contest, ICS-FORTH, Sep 2025 (1st Prize)
-	        </div>
-	        <div class="talk">
-	          <strong>Learning DTW-Preserving Embeddings for Scalable and Accurate Time Series Applications</strong> – TwinODIS Seminar, ICS-FORTH, Jul 2025
-	        </div>
-	        <div class="talk">
-	          <strong>Regularization-free Diffeomorphic Temporal Alignment Nets</strong> – LIPADE diNo-Group Presentation, Université Paris Cité, Feb 2025
-	        </div>
-	        <div class="talk">
-	          <strong>Differential Transformer</strong> – LIPADE diNo-Group Presentation, Université Paris Cité, Oct 2024
-	        </div>
-	        <div class="talk">
-	          <strong>DTW-Preserving Time Series Embeddings for Enhanced Similarity Search with Euclidean Distance Metrics</strong> – MSc Internship Report Presentation, University of West Attica, Sep 2024
-	        </div>
-	        <div class="talk">
-	          <strong>A Linear Time Approach to Computing Time Series Similarity Based on Deep Metric Learning</strong> – LIPADE diNo-Group Presentation, Université Paris Cité, Dec 2023
-	        </div>
-	        <div class="talk">
-	          <strong>Stock Price Prediction with RNNs</strong> – BSc Project, University of Crete, May 2022
-	        </div>
-	      </div>
-	    </section>
+        <p class="note">* Equal contribution</p>
+      </section>
 
-	      <section id="teaching">
-	        <h2>Teaching</h2>
-	        <div id="teachingList">
-	          <div class="talk"><strong>Exercise Classes</strong> – Algorithmique et programmation 2 (in French), Université Paris Cité, Jan 2026 – Jun 2026</div>
-	          <div class="talk"><strong>Introduction to Python</strong> – French 10th-grade students, Université Paris Cité, Jun 2025</div>
-	          <div class="talk"><strong>Introduction to LaTeX</strong> – French 10th-grade students, Université Paris Cité, Jun 2025</div>
-	        </div>
-	      </section>
-    </section>
+      <section id="talks">
+        <h2>Presentations</h2>
+        <div class="entry">
+          <div class="row"><span class="title">Autonomous Agents for Research</span><span class="side">Sep 2026</span></div>
+          <div class="meta">LIPADE diNo-Group Presentation, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Retrieval Over Training: Similarity search-based Model Selection for Time Series Anomaly Detection</span><span class="side">Jun 2026</span></div>
+          <div class="meta">TwinODIS 2nd Summer School Presentation, ICS-FORTH</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">ChatTS: Aligning Time Series with LLMs via Synthetic Data for Enhanced Understanding and Reasoning</span><span class="side">Feb 2026</span></div>
+          <div class="meta">LIPADE diNo-Group Presentation, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">WETW: Efficient DTW Approximation over DTW-Preserving Embeddings</span><span class="side">Nov 2025</span></div>
+          <div class="meta">LIPADE diNo-Group Presentation, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Faster and More Accurate Time Series Similarity Evaluation <span class="badge award">1st Prize</span></span><span class="side">Sep 2025</span></div>
+          <div class="meta">TwinODIS 1st Summer School Pitch Jam Contest, ICS-FORTH</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Learning DTW-Preserving Embeddings for Scalable and Accurate Time Series Applications</span><span class="side">Jul 2025</span></div>
+          <div class="meta">TwinODIS Seminar, ICS-FORTH</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Regularization-free Diffeomorphic Temporal Alignment Nets</span><span class="side">Feb 2025</span></div>
+          <div class="meta">LIPADE diNo-Group Presentation, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Differential Transformer</span><span class="side">Oct 2024</span></div>
+          <div class="meta">LIPADE diNo-Group Presentation, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">DTW-Preserving Time Series Embeddings for Enhanced Similarity Search with Euclidean Distance Metrics</span><span class="side">Sep 2024</span></div>
+          <div class="meta">MSc Internship Report Presentation, University of West Attica</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">A Linear Time Approach to Computing Time Series Similarity Based on Deep Metric Learning</span><span class="side">Dec 2023</span></div>
+          <div class="meta">LIPADE diNo-Group Presentation, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Stock Price Prediction with RNNs</span><span class="side">May 2022</span></div>
+          <div class="meta">BSc Project, University of Crete</div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="entry">
+          <div class="row"><span class="title">Ph.D. Candidate</span><span class="side">Nov 2024 – Present</span></div>
+          <div class="meta">Laboratoire d’Informatique Paris Descartes (LIPADE), Université Paris Cité, Paris, France</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Associate Researcher</span><span class="side">Sep 2024 – Nov 2024</span></div>
+          <div class="meta">Laboratoire d’Informatique Paris Descartes (LIPADE), Université Paris Cité, Paris, France</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Associate Researcher</span><span class="side">Oct 2023 – Jun 2024</span></div>
+          <div class="meta">Laboratoire d’Informatique Paris Descartes (LIPADE), Université Paris Cité, Paris, France</div>
+        </div>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <div class="entry">
+          <div class="row"><span class="title">Exercise Classes, Algorithmique et programmation 2</span><span class="side">Jan 2026 – Jun 2026</span></div>
+          <div class="meta">In French, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Introduction to Python</span><span class="side">Jun 2025</span></div>
+          <div class="meta">French 10th-grade students, Université Paris Cité</div>
+        </div>
+        <div class="entry">
+          <div class="row"><span class="title">Introduction to LaTeX</span><span class="side">Jun 2025</span></div>
+          <div class="meta">French 10th-grade students, Université Paris Cité</div>
+        </div>
+      </section>
+    </main>
   </div>
-
-  <script>
-    function searchPublications() {
-      let input = document.getElementById("searchInput").value.toLowerCase();
-      let items = document.getElementById("pubList").getElementsByTagName("li");
-      for (let i = 0; i < items.length; i++) {
-        let txt = items[i].textContent.toLowerCase();
-        items[i].style.display = txt.includes(input) ? "" : "none";
-      }
-    }
-  </script>
 </body>
 </html>
